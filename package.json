@@ -15,10 +15,12 @@
   "bugs": {
     "url": "https://github.com/OchenSeriozni/frontend-project-lvl1/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/OchenSeriozni/frontend-project-lvl1#readme",
-   
-    "type" :"module",
-    "bin": {
-      "brain-games": "bin/brain-games.js"
-    }
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

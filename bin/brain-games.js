@@ -1,2 +1,4 @@
-let msg1='Hello World';
-console.log('5'+'3');
+#!/usr/bin/env node.
+import {welcome} from "../src/cli.js";
+console.log ( welcome() );
+
