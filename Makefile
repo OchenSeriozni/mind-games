@@ -2,6 +2,8 @@ instal: # первичная установка проекта
 	npm ci
 brain-games: # запуск файла с кодом игры
 	node bin/brain-games.js
- publish: #
+publish: # Проверка на ошибки при публикации проекта (делать в конце, перед пушем в репозиторий)
 	npm publish --dry-run
+lint: # Запускает линтер
+	npx eslint .
  
