@@ -1,4 +1,4 @@
-name: eslint-test
+name: linter-status
 on:
   - push
 jobs:
@@ -8,6 +8,10 @@ jobs:
       matrix:
         node-version: [16.13.2]
     steps:
+      - uses: actions/checkout@v2
+      - name: npm install
+        run: 
+          make install
       - name: Run linter
         run: |
           make lint
