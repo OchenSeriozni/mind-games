@@ -6,4 +6,5 @@ publish: # Проверка на ошибки при публикации про
 	npm publish --dry-run
 lint: # Запускает линтер
 	npx eslint .
- 
+ brain-even: # запуск игры - проверка чисел на чётность.
+	node ./bin/brain-even.js
