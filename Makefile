@@ -1,4 +1,4 @@
-instal: # первичная установка проекта
+install: # первичная установка проекта
 	npm ci
 brain-games: # запуск файла с кодом игры
 	node bin/brain-games.js
@@ -7,4 +7,4 @@ publish: # Проверка на ошибки при публикации про
 lint: # Запускает линтер
 	npx eslint .
  brain-even: # запуск игры - проверка чисел на чётность.
-	node ./bin/brain-even.js
+	node bin/brain-even.js

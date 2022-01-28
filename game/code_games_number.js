@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import welcome from './cli.js';
+import welcome from '../src/cli.js';
 
 const gameNumber = () => {
   const nameUser = welcome();
