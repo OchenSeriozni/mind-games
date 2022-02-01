@@ -1,2 +1,2 @@
-const getRandomInt = () => Math.floor(Math.random() * 10);
+const getRandomInt = () => Math.floor(Math.random() * 30);
 export default getRandomInt;
