@@ -12,9 +12,9 @@ const gameCalc = () => {
     const char = randomChar();
     const result = randomChar1(num1, num2, char);
 
-    const number = readlineSync.question(`What is the result of the expression?.\nQuestion: ${num1}${char}${num2}\nYour answer: `);
+    const number = readlineSync.question(`What is the result of the expression?.\nQuestion: ${num1} ${char} ${num2}\nYour answer: `);
     if (+number !== result) {
-      return `${number} is wrong answer ;(. Correct answer was ${result} .\nLet's try again, ${nameUser}!`;
+      return `'${number}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${nameUser}!`;
     }
     console.log('Correct!');
   }
@@ -24,9 +24,9 @@ const gameCalc = () => {
     const char = randomChar();
     const result = randomChar1(num1, num2, char);
 
-    const number = readlineSync.question(`Question: ${num1}${char}${num2}\nYour answer: `);
+    const number = readlineSync.question(`Question: ${num1} ${char} ${num2}\nYour answer: `);
     if (+number !== result) {
-      return `${number} is wrong answer ;(. Correct answer was ${result} .\nLet's try again, ${nameUser}!`;
+      return `'${number}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${nameUser}!`;
     }
     console.log('Correct!');
   }
