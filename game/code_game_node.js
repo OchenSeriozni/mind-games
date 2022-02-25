@@ -10,8 +10,7 @@ const gameNode = () => {
     const num1 = getRandomInt();
     const num2 = getRandomInt();
     const result = maxDivisor(num1, num2);
-
-    const number = readlineSync.question(`What is the result of the expression?.\nQuestion: ${num1} ${num2}\nYour answer: `);
+    const number = readlineSync.question(`What is the result of the expression?.\nQuestion: ${num1}${num2}\nYour answer: `);
     if (+number !== result) {
       return `${number} is wrong answer ;(. Correct answer was ${result} .\nLet's try again, ${nameUser}!`;
     }
@@ -22,7 +21,7 @@ const gameNode = () => {
     const num2 = getRandomInt();
     const result = maxDivisor(num1, num2);
 
-    const number = readlineSync.question(`Question: ${num1} ${num2}\nYour answer: `);
+    const number = readlineSync.question(`Question: ${num1}${num2}\nYour answer: `);
     if (+number !== result) {
       return `${number} is wrong answer ;(. Correct answer was ${result} .\nLet's try again, ${nameUser}!`;
     }
